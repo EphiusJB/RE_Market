@@ -1,0 +1,316 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.navba{
+    position: fixed;
+    color: inherit;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    background-color: whitesmoke;
+    justify-content: space-between;
+    box-shadow: 0px 2px 3px gray;
+    z-index: 9999;
+}
+
+.logo{
+    width: 5%;
+    height: 100%;
+}
+#logo{
+    width: 80%;
+    height: 90%;
+    padding: 1px 0px 0px 10px;
+}
+.search{
+    width: 30%;
+    height: 70%;
+    margin-top: 7px;
+    border: solid;
+    border-radius: 20px;
+    border-width: 1px;
+    border-color: gray;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;/*
+    box-shadow: inset  0px 1px 2px white;*/
+}
+#srch{
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    border: none;
+    background-color: transparent;
+    border-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    outline: none;
+    color: black;
+}
+#sbmt{
+    width: 20%;
+    height: 90%;
+    margin-top: 2px;
+    background-color: transparent;
+    background-image: url('icons/48px/Search\ alt\ 1.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+}
+
+.navOptns{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    font-weight: light;
+    padding: 3% 5% 4% 5%;
+}
+a:hover{
+    background-color: rgb(230, 228, 228);
+    transition: 0.2s;
+}
+.menu{
+    width: 10%;
+    text-align: center;
+    color: inherit;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    font-weight: light;
+    padding: 1% 1% 2% 1%;
+    cursor: pointer;
+}
+.menu:hover{
+    background-color: whitesmoke;
+    color: black;
+    transition: 0.3s;
+}
+.space{
+    width: 100%;
+    height: 50px;    
+}
+.pic_block{/*
+    position: relative;*/
+    width: 100%;
+    height: 500px;
+    background-image: url("images/11.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(0px);
+}
+.buttons{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    margin-top: -90px;
+    z-index: 10;
+}
+.laya{
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    z-index: 10;
+}
+button{
+    padding: 15px 15% 15px 15%;
+    border-radius: 25px;
+    border: solid;
+    border-color: lightgray;
+    border-width: 2px;
+    background-color: transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    font-weight: light;
+    color: lightgray;
+    cursor: pointer;
+}
+button:hover{
+    background-color: whitesmoke;
+    color: black;
+    transition: 0.2s;
+}
+.about{
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    background-color: #f2f2f2;
+    margin-top: -5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    z-index: 10;
+}
+.precon{
+    height: 10%;
+}
+.tyto{
+    height: 15%;
+    padding: 10px;
+    font-size: xx-large;
+    font-weight: bold;
+    color: rgb(26, 38, 75);
+}
+.tile_containa{
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.tile{
+    width: 25%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 3px 8px black;
+}
+.lable{
+    height: 15%;
+    padding: 15px;
+    font-weight: bold;
+    font-size: large;
+    color: rgb(26, 38, 75);
+}
+.image{
+    height: 55%;
+}
+#image{
+    width: 98%;
+    height: 100%;
+}
+.description{
+    height: 30%;
+    padding: 15px;
+}
+
+.formcontainer{
+    display: none;
+    position: absolute;
+    z-index: 11;
+    width: 100%;
+    margin-top: -450px;
+}
+.loginform{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    width: 400px;
+    height: 500px;
+    margin: auto;
+    box-shadow: 0px 3px 8px black;
+    z-index: 12;
+}
+.logo2{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+}
+.logoImage{
+    height: 120px;
+    margin: auto;
+}
+.detz{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 55%;
+}
+#email{
+    width: 300px;
+    height: 40px;
+    border: solid 2px;
+    margin: auto;
+    text-align: center;
+    outline: none;
+    background-color: transparent;
+    border-radius: 15px;
+}
+#pword{
+    width: 300px;
+    height: 40px;
+    border: solid 2px;
+    margin: auto;
+    text-align: center;
+    outline: none;
+    background-color: transparent;
+    border-radius: 15px;
+}
+#submit{
+    width: 120px;
+    height: 30px;
+    border: solid;
+    border-radius: 15px;
+    border-width: 2px;
+    margin: auto;
+}
+.socialApi{
+    height: 15%;
+    display: flex;
+    justify-content: space-evenly;
+}
+#socials{
+    text-align: center;
+    border: solid;
+    border-width: 2px;
+    width: 30%;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 3px;
+}
+.google{
+    border-color: red;
+    color: whitesmoke;
+    background-color: red;
+}
+.google:hover{
+    background-color: whitesmoke;
+    color: red;
+    transition: 0.3s;
+}
+.fbook{
+    border-color: blue;
+    color: whitesmoke;
+    background-color: blue;
+}
+.fbook:hover{
+    background-color: whitesmoke;
+    color: blue;
+    transition: 0.3s;
+}
+.twit{
+    border-color:rgb(17, 181, 247);
+    color: whitesmoke;
+    background-color: rgb(17, 181, 247);
+}
+.twit:hover{
+    background-color: whitesmoke;
+    color: rgb(17, 181, 247);
+    transition: 0.3s;
+}
